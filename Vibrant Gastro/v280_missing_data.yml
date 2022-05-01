@@ -1,0 +1,6 @@
+customer_id: 4799
+model: pg
+template_id: site_event_missing_crfs_template
+metadata:
+  db: v280
+  events: [Screening, Baseline]
