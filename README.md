@@ -8,7 +8,7 @@ The folder naming convention is CustomerName, where CustomerName is the name cho
 
 The CustomerName can be viewed and modified by logging into app.flaskdata.io in the Customer Profile in the hamburger icon by the Customer Admin role.
 
-## Writing reports using YAML syntax
+### Writing reports using YAML syntax
 For Flask Reports, nearly every YAML file has a list of CDASH items or EDC events. Each item in the list is a list of key/value pairs, commonly called a “hash” or a “dictionary”. So, we need to know how to write lists and dictionaries in YAML.
 
 There’s a small quirk to YAML. All YAML files (regardless of their association with Flask Reports or not) can optionally begin with --- and end with .... This is part of the YAML format and indicates the start and end of a document.
@@ -21,8 +21,7 @@ There’s a small quirk to YAML. All YAML files (regardless of their association
      report:
        db: rlf100
        crf: Assessment of Respiratory Failure
-     # CDASH variable names from the annotated CRF
-        items:
+       items:
           - RSRUTIDAT
           - SHOCKDAT
           - MORGNFLDAT
@@ -39,11 +38,10 @@ YAML Lint (http://www.yamllint.com/) helps you debug YAML syntax if you are havi
 
 That’s all you really need to know about YAML to start writing Flask Reports.
 
-#
 
 data-extracts repository API (getReportData) will read the file (by file path) and return the study data according to report definition.
 
-## Version 1.0 supports 6 report templates:
+### Version 1.0 supports 6 report templates:
 
 1. subject_event_variables
 2. subject_events_variable_pairs_with_filters
@@ -54,8 +52,8 @@ data-extracts repository API (getReportData) will read the file (by file path) a
 
 Documentation: https://docs.google.com/document/d/13frwgcR4UK18NRBwmKIuVHV6zVw_FlzSHUbbYz5G6Z8/edit#
 
-## TB deprecated
-## Example of report metadata for each template:
+### TB deprecated
+### Example of report metadata for each template:
 1. {'db': 'rlf100', 'crf': 'Assessment of Respiratory Failure', 'items': ['RSRUTIDAT', 'SHOCKDAT', 'MORGNFLDAT', 'RENAL', 'CARDIO', 'NEUROLOGICAL', 'HEPATIC','HEMATOLOGIC']}
 2. {'db': 'rlf100', 'items': [{'name':'DIABP','condition':'<','threshold':'60'},{'name':'MORGNFL','condition':'=','threshold':'1'},{'name':'SHOCKYN','condition':'=','threshold':'1'}]}
 3. {'db': 'rlf100', 'items': [['DIABP','MORGNFL'],'SHOCKYN',['CMTRT','CMONGO']]}
