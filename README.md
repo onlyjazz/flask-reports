@@ -13,26 +13,25 @@ For Flask Reports, nearly every YAML file has a list of CDASH items or EDC event
 
 There’s a small quirk to YAML. All YAML files (regardless of their association with Flask Reports or not) can optionally begin with --- and end with .... This is part of the YAML format and indicates the start and end of a document.
 
-Let's do an example:
->
-> ---
-> # Report for Assessment of Respiratory Failure
-> model: PG
-> template: subject_event_variables
-> report:
->   db: rlf100
->   crf: Assessment of Respiratory Failure
-> # CDASH variable names from the annotated CRF
->    items:
->      - RSRUTIDAT
->      - SHOCKDAT
->      - MORGNFLDAT
->      - RENAL
->      - CARDIO
->      - NEUROLOGICAL
->      - HEPATIC
->      - HEMATOLOGIC
-> ...
+    Let's do an example:
+     ---
+     # Report for Assessment of Respiratory Failure
+     model: PG
+     template: subject_event_variables
+     report:
+       db: rlf100
+       crf: Assessment of Respiratory Failure
+     # CDASH variable names from the annotated CRF
+        items:
+          - RSRUTIDAT
+          - SHOCKDAT
+          - MORGNFLDAT
+          - RENAL
+          - CARDIO
+          - NEUROLOGICAL
+          - HEPATIC
+          - HEMATOLOGIC
+     ...
 
 
 YAMLLint
