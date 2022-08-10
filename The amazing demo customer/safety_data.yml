@@ -1,7 +1,0 @@
----
-crf: "Adverse Event / Serious Adverse Event"
-model: pg
-report:
-  items:
-    - ITEM_AE_ADVERSE_EVENT_LKSA1
-template: subject_event_variables
