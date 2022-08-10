@@ -4,5 +4,4 @@ model: pg
 report:
   items:
     - ITEM_AE_ADVERSE_EVENT_LKSA1
-    - ITEM_AE_ONSET_DATE_XYSOA
 template: subject_event_variables
