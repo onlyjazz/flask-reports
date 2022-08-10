@@ -4,4 +4,4 @@ model: pg
 report:
   items:
     - QOLENERGY
-template: subject_event_variables
+template: subject_variables
