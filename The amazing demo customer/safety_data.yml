@@ -1,0 +1,7 @@
+model: pg
+template: subject_event_variables
+crf: Adverse Event / Serious Adverse Event
+report:
+  items:
+    - ITEM_AE_ADVERSE_EVENT_LKSA1
+    - ITEM_AE_ONSET_DATE_XYSOA
