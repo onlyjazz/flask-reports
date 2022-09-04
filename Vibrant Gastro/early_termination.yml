@@ -1,1 +1,4 @@
-
+model: pg
+template: subject_variables
+report:
+  items: 
