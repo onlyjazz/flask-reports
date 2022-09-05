@@ -1,7 +1,0 @@
----
-crf: "QoL"
-model: pg
-report:
-  items:
-    - QOLENERGY
-template: subject_variables
