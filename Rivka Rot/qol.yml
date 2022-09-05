@@ -4,4 +4,5 @@ model: pg
 report:
   items:
     - QOLENERGY
+    - QOLGENSENG
 template: subject_variables
