@@ -1,8 +1,8 @@
 ---
-crf: "QoL"
 model: pg
 report:
   items:
     - QOLENERGY
     - QOLGENSENG
+  crf: "QoL"
 template: subject_variables
