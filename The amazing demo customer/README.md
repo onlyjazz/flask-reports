@@ -1,4 +1,4 @@
 
-This folder includes all vibrant reports definitions files (yaml files)
+This folder includes the YAML report definition files for the demo branch
 
-The folder name should be = flask customer name (customers.name)
+Sub-directories are named using the following convention:   <branch>/flask.customers.name
