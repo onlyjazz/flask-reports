@@ -26,27 +26,26 @@ That’s all you really need to know about YAML to start writing Flask Reports.
 5. site_events_count_data_missing
 6. site_event_count_subjects
 
-## Show me examples 
+## Got it. Now show me examples
 
-### subject_event_variables
-     ---
-     # Report for Assessment of Respiratory Failure
-     model: PG
-     template: subject_event_variables
-     report:
-       crf: Assessment of Respiratory Failure
-       items:
-          - RSRUTIDAT
-          - SHOCKDAT
-          - MORGNFLDAT
-          - RENAL
-          - CARDIO
-          - NEUROLOGICAL
-          - HEPATIC
-          - HEMATOLOGIC
-     ...
+### AE listing with subject_event_variables
+    model: pg
+    template: subject_event_variables
+    report:
+      crf: Adverse Events
+      items:
+         - ADVERSE_EVENT_YESNO
+         - ADVERSE_EVENT_START_DATE
+         - ADVERSE_EVENT_COMPLICATION
+         - ADVERSE_EVENT_OUTCOME
+         - ADVERSE_EVENT_PROCEDURE_DEVICE_RELATED
 
-
+### Missing data in ePRO - with site_events_count_data_missing
+    model: pg
+    template: site_events_count_data_missing
+    report:
+      events:
+        - Daily meds
 
 
 ## Run-time
