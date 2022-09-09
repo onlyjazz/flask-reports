@@ -4,3 +4,4 @@ report:
   crf: Adverse Events
   items:
      - ADVERSE_EVENT_YESNO
+     - ADVERSE_EVENT_COMPLICATION
