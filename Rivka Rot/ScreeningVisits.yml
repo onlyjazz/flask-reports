@@ -1,5 +1,5 @@
 model: pg
-template: subject_crf_item_values
+template: subject_variables
 report:
   crf:
     - Date of Screening Visit
