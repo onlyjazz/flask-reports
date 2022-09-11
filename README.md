@@ -47,6 +47,14 @@ That’s all you really need to know about YAML to start writing Flask Reports.
       events:
         - Daily meds
 
+### Dates of patient screening  - with subject_crf_item_values
+    model: pg
+    template: subject_crf_item_values
+    report:
+      crf:
+        - Date of Screening Visit
+      items:
+        - DATE_OF_SCREENING_VISIT
 
 ## Run-time
 At run-time, the data-extracts/getReportData API  reads the YAML file (using the /CustomerName file path) and returns the study data according to report definition.
