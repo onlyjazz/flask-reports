@@ -81,6 +81,16 @@ That’s all you really need to know about YAML to start writing Flask Reports.
       item:
         - INFORMED_CONSENT_DATE
 
+### Empty ICF date? - with subject_events_variable_pairs_with_filters
+    model: pg
+    template: subject_events_variable_pairs_with_filters
+    report:
+      item:
+        - INFORMED_CONSENT_DATE
+      condition:
+        - ">1970-01-01"
+
+
 
 ## Run-time
 At run-time, the data-extracts/getReportData API  reads the YAML file (using the /CustomerName file path) and returns the study data according to report definition.
