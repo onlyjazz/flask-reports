@@ -1,5 +1,5 @@
 model: pg
-template: site_event_subjects
+template: site_event_count_subjects
 report:
   event:
     - Screening
