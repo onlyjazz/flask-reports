@@ -64,6 +64,15 @@ That’s all you really need to know about YAML to start writing Flask Reports.
         - Screening
         - End of Study
 
+### When was ICF obtained? - with subject_crf_date_time_item_values
+    model: pg
+    template: subject_crf_date_time_item_values
+    report:
+      crf:
+        - Informed Consent
+      item:
+        - INFORMED_CONSENT_DATE
+
 ## Run-time
 At run-time, the data-extracts/getReportData API  reads the YAML file (using the /CustomerName file path) and returns the study data according to report definition.
 
