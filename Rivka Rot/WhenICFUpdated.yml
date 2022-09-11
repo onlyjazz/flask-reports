@@ -1,0 +1,7 @@
+model: pg
+template: subject_crf_date_time_item_values
+report:
+  crf:
+    - Informed Consent
+  item:
+    - INFORMED_CONSENT_DATE

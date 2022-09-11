@@ -1,0 +1,7 @@
+model: pg
+template: subject_crf_item_values
+report:
+  crf:
+    - Date of Screening Visit
+  items:
+    - DATE_OF_SCREENING_VISIT
