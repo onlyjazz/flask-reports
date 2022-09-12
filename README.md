@@ -1,5 +1,9 @@
 # flask-reports
-# Report generator Rev 1.0
+# Data management Report generator Rev 1.0
+
+## What is Flask Reports?
+Flask Reports is a Data management Report report generator for ClinCapture 2.x.  Currently it has been tested on ClinCapture 2.1 and 2.3
+Flask Reports enable rapid development of online data tables to EDC databases.  We've taken a simple approach of using templates and YAML files to define reports instead of trying to make a complex UX/UI report generator.
 
 ## Introduction
 Reports are defined using YAML files.  The YAML files are stored in this public Git repository in folders.
