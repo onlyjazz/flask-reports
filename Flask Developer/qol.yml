@@ -1,9 +1,0 @@
----
-# qol.yml  
-template: subject_variables
-model: pg
-report:
-  items:
-    - QOLENERGY
-    - QOLGENSENG
-  crf: "QoL"

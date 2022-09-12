@@ -1,8 +1,0 @@
----
-# VitalSigns.yml
-model: pg
-template: subject_event_variables
-report:
-  crf: "Vital Signs"
-  items:
-    - ITEM_VS_PULSE_RATE_SH5UC

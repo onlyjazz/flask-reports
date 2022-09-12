@@ -54,17 +54,17 @@ report:
       condition: "<"
       threshold: '2022-01-01'
 
-### subject_variables -- list items across forms and events
-\# qol.yml  
-template: subject_variables
+### subject_variables -- list items by subject
+\# ScreeningVisits.yml
 model: pg
+template: subject_variables
 report:
+  crf:
+    - Date of Screening Visit
   items:
-    - QOLENERGY
-    - QOLGENSENG
-  crf: "QoL"
+    - DATE_OF_SCREENING_VISIT
 
-### subject_date_time_variables - list date/times across forms and Events
+### subject_date_time_variables - show Event and data entry date-times
 \# WhenICFUpdated.yml
 model: pg
 template: subject_date_time_variables
