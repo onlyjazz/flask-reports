@@ -43,15 +43,19 @@ report:
      - ADVERSE_EVENT_PROCEDURE_DEVICE_RELATED
 ```
 
-### subject_events_variable_pairs_with_filters - list informed consent dates in a range
+### subject_events_variable_pairs_with_filters - show CRF item(s) in range in all events where it appears (good for treatment visits)
 ```
 # EmptyICFDates.yml
+# v2xx ClinCapture databases
 model: pg
+version: 2.1
 template: subject_events_variable_pairs_with_filters
+name:  ICF Dates 
 report:
+  crf: Informed Consent
   items:
     - name: INFORMED_CONSENT_DATE
-      condition: ">"
+      condition: ">="
       threshold: '1970-01-01'
     - name: INFORMED_CONSENT_DATE
       condition: "<"
