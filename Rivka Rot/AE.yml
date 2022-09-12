@@ -1,6 +1,7 @@
 model: pg
 template: subject_event_variables
 name: Adverse Events
+version: '2.1'
 report:
   crf: Adverse Events
   items:
