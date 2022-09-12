@@ -1,6 +1,0 @@
-model: pg
-template: subject_event_variables
-report:
-  crf: Informed Consent
-  items:
-     - INFORMED_CONSENT_DATE
