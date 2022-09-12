@@ -1,0 +1,14 @@
+# AE2.yml
+model: pg
+version: '2.1'
+name: Capsule Count
+# 3. Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
+# 5. Subject signed Informed Consent = 0 (no)
+template: subject_event_variables
+report:
+  crf:  Daily Capsule
+  items:
+     - CAPSULE_COUNT
+     - CAPSULE_SWALLOW
+     - DATE_CAPSULE
+     - SATISFACTION_TREATMENT
