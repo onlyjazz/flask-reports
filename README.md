@@ -29,7 +29,8 @@ That’s all you really need to know about YAML to start writing Flask Reports.
 ## Got it. Now show me some examples so that I can try it out
 
 ### subject_event_variables - produce a listing of AE data
-\# AE.yml
+```
+# AE.yml
 model: pg
 template: subject_event_variables
 report:
@@ -40,9 +41,11 @@ report:
      - ADVERSE_EVENT_COMPLICATION
      - ADVERSE_EVENT_OUTCOME
      - ADVERSE_EVENT_PROCEDURE_DEVICE_RELATED
+```
 
 ### subject_events_variable_pairs_with_filters - list informed consent dates in a range
-\# EmptyICFDates.yml
+```
+# EmptyICFDates.yml
 model: pg
 template: subject_events_variable_pairs_with_filters
 report:
@@ -53,9 +56,10 @@ report:
     - name: INFORMED_CONSENT_DATE
       condition: "<"
       threshold: '2022-01-01'
-
+```
 ### subject_variables -- list items by subject
-\# ScreeningVisits.yml
+```
+# ScreeningVisits.yml
 model: pg
 template: subject_variables
 report:
@@ -63,33 +67,38 @@ report:
     - Date of Screening Visit
   items:
     - DATE_OF_SCREENING_VISIT
+```
 
 ### subject_date_time_variables - show Event and data entry date-times
-\# WhenICFUpdated.yml
+```
+# WhenICFUpdated.yml
 model: pg
 template: subject_date_time_variables
 report:
   crf: Informed Consent
   items:
     - INFORMED_CONSENT_DATE
+```
 
 ### site_events_count_data_missing - find missing required forms in visits/events
-\# MissingDatainDailyMeds.yml
+```
+# MissingDatainDailyMeds.yml
 model: pg
 template: site_events_count_data_missing
 report:
   events:
     - Daily meds
-
+```
 ### site_event_count_subjects - Count patients in events, for example screening and EOS
-\# CountPatientsScreened.yml
+```
+# CountPatientsScreened.yml
 model: pg
 template: site_event_count_subjects
 report:
   events:
     - Screening
     - End of Study
-
+```
 
 
 
