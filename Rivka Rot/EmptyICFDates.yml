@@ -1,7 +1,7 @@
 # EmptyICFDates.yml
 # v2xx ClinCapture databases
 model: pg
-version: 2.1
+version: '2.1'
 template: subject_events_variable_pairs_with_filters
 name:  ICF Dates
 report:
