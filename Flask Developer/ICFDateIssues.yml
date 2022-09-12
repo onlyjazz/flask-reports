@@ -10,5 +10,5 @@ report:
       condition: "<"
       threshold: '2018-01-01'
     - name: INFORMED_CONSENT_DATE
-      condition: ">"
-      threshold: '2019-01-01'
+      condition: "="
+      threshold: ''
