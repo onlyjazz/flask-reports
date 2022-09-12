@@ -1,6 +1,0 @@
-model: pg
-template: site_events_count_data_missing
-report:
-  events: 
-    - Screening
-    - Baseline

@@ -1,7 +1,10 @@
 model: pg
 template: subject_events_variable_pairs_with_filters
 report:
-  item:
-    - INFORMED_CONSENT_DATE
-  condition:
-    - ">1970-01-01"
+  items:
+    - name: INFORMED_CONSENT_DATE
+      condition: ">"
+      threshold: '1970-01-01'
+    - name: INFORMED_CONSENT_DATE
+      condition: "<"
+      threshold: '2022-01-01'
