@@ -1,3 +1,4 @@
+# InformedConsent.yml
 model: pg
 template: subject_event_variables
 report:

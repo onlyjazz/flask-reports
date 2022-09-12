@@ -1,3 +1,4 @@
+# CountPatientsScreened.yml
 model: pg
 template: site_event_count_subjects
 report:

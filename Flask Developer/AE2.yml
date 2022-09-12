@@ -1,3 +1,4 @@
+# AE2.yml
 model: pg
 template: subject_event_variables
 report:
@@ -5,6 +6,3 @@ report:
   items:
      - ADVERSE_EVENT_START_DATE
      - ADVERSE_EVENT_YESNO
-     - ADVERSE_EVENT_COMPLICATION
-     - ADVERSE_EVENT_OUTCOME
-     - ADVERSE_EVENT_PROCEDURE_DEVICE_RELATED

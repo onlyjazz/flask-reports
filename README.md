@@ -26,69 +26,70 @@ That’s all you really need to know about YAML to start writing Flask Reports.
 5. site_events_count_data_missing
 6. site_event_count_subjects
 
-## Got it. Now show me examples
+## Got it. Now show me some examples so that I can try it out
 
-### AE listing with subject_event_variables
-    model: pg
-    template: subject_event_variables
-    report:
-      crf: Adverse Events
-      items:
-         - ADVERSE_EVENT_YESNO
-         - ADVERSE_EVENT_START_DATE
-         - ADVERSE_EVENT_COMPLICATION
-         - ADVERSE_EVENT_OUTCOME
-         - ADVERSE_EVENT_PROCEDURE_DEVICE_RELATED
+### subject_event_variables - produce a listing of AE data
+\# AE.yml
+model: pg
+template: subject_event_variables
+report:
+  crf: Adverse Events
+  items:
+     - ADVERSE_EVENT_YESNO
+     - ADVERSE_EVENT_START_DATE
+     - ADVERSE_EVENT_COMPLICATION
+     - ADVERSE_EVENT_OUTCOME
+     - ADVERSE_EVENT_PROCEDURE_DEVICE_RELATED
 
-### Missing data in ePRO - with site_events_count_data_missing
-    model: pg
-    template: site_events_count_data_missing
-    report:
-      events:
-        - Daily meds
+### subject_events_variable_pairs_with_filters - list informed consent dates in a range
+\# EmptyICFDates.yml
+model: pg
+template: subject_events_variable_pairs_with_filters
+report:
+  items:
+    - name: INFORMED_CONSENT_DATE
+      condition: ">"
+      threshold: '1970-01-01'
+    - name: INFORMED_CONSENT_DATE
+      condition: "<"
+      threshold: '2022-01-01'
 
-# The following cases do not work
-### Dates of patient screening  - with subject_crf_item_values
-    model: pg
-    template: subject_crf_item_values
-    report:
-      crf:
-        - Date of Screening Visit
-      items:
-        - DATE_OF_SCREENING_VISIT
+### subject_variables -- list items across forms and events
+\# qol.yml  
+template: subject_variables
+model: pg
+report:
+  items:
+    - QOLENERGY
+    - QOLGENSENG
+  crf: "QoL"
 
-### Count patients screened and completed Study
-    model: pg
-    template: site_event_subjects
-    report:
-      event:
-        - Screening
-        - End of Study
+### subject_date_time_variables - list date/times across forms and Events
+\# WhenICFUpdated.yml
+model: pg
+template: subject_date_time_variables
+report:
+  crf: Informed Consent
+  items:
+    - INFORMED_CONSENT_DATE
 
-### When was ICF obtained? - with subject_crf_date_time_item_values
-    model: pg
-    template: subject_crf_date_time_item_values
-    report:
-      crf:
-        - Informed Consent
-      item:
-        - INFORMED_CONSENT_DATE
+### site_events_count_data_missing - find missing required forms in visits/events
+\# MissingDatainDailyMeds.yml
+model: pg
+template: site_events_count_data_missing
+report:
+  events:
+    - Daily meds
 
-### ICF values? - with subject_item_values
-    model: pg
-    template: subject_item_values
-    report:
-      item:
-        - INFORMED_CONSENT_DATE
+### site_event_count_subjects - Count patients in events, for example screening and EOS
+\# CountPatientsScreened.yml
+model: pg
+template: site_event_count_subjects
+report:
+  events:
+    - Screening
+    - End of Study
 
-### Empty ICF date? - with subject_events_variable_pairs_with_filters
-    model: pg
-    template: subject_events_variable_pairs_with_filters
-    report:
-      item:
-        - INFORMED_CONSENT_DATE
-      condition:
-        - ">1970-01-01"
 
 
 
