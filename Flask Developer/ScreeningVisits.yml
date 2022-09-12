@@ -1,5 +1,7 @@
 # ScreeningVisits.yml
 model: pg
+version: '2.1'
+name: Dates screened
 template: subject_variables
 report:
   crf:

@@ -1,5 +1,7 @@
 # WhenICFUpdated.yml
 model: pg
+version: '2.1'
+name: ICF Dates
 template: subject_date_time_variables
 report:
   crf: Informed Consent

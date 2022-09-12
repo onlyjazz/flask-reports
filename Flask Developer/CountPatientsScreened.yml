@@ -1,7 +1,7 @@
 # CountPatientsScreened.yml
 model: pg
 version: '2.1'
-name: Events number of patients
+name: Screens and dropouts
 template: site_event_count_subjects
 report:
   events:

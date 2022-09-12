@@ -1,5 +1,7 @@
 # MissingDatainDailyMeds.yml
 model: pg
+version: '2.1'
+name: Missing data in daily meds
 template: site_events_count_data_missing
 report:
   events:

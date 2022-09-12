@@ -1,10 +1,12 @@
 # EmptyICFDates.yml
 model: pg
+version: '2.1'
+name: Informed Consent since 1970
 template: subject_events_variable_pairs_with_filters
 report:
   items:
     - name: INFORMED_CONSENT_DATE
-      condition: ">"
+      condition: ">="
       threshold: '1970-01-01'
     - name: INFORMED_CONSENT_DATE
       condition: "<"

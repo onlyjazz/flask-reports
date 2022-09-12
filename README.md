@@ -36,6 +36,8 @@ That’s all you really need to know about YAML to start writing Flask Reports.
 ```
 # AE.yml
 model: pg
+version: '2.1'
+Name: Adverse Events
 template: subject_event_variables
 report:
   crf: Adverse Events
@@ -52,9 +54,10 @@ report:
 # EmptyICFDates.yml
 # v2xx ClinCapture databases
 model: pg
-version: 2.1
+version: '2.1'
+name: Informed Consent since 1970
 template: subject_events_variable_pairs_with_filters
-name:  ICF Dates 
+name:  ICF Dates
 report:
   crf: Informed Consent
   items:
@@ -69,6 +72,8 @@ report:
 ```
 # ScreeningVisits.yml
 model: pg
+version: '2.1'
+name: Dates screened
 template: subject_variables
 report:
   crf:
@@ -81,6 +86,8 @@ report:
 ```
 # WhenICFUpdated.yml
 model: pg
+version: '2.1'
+name: ICF Dates
 template: subject_date_time_variables
 report:
   crf: Informed Consent
@@ -92,6 +99,8 @@ report:
 ```
 # MissingDatainDailyMeds.yml
 model: pg
+version: '2.1'
+name: Missing data in daily meds
 template: site_events_count_data_missing
 report:
   events:
@@ -101,6 +110,8 @@ report:
 ```
 # CountPatientsScreened.yml
 model: pg
+version: '2.1'
+name: Screens and dropouts
 template: site_event_count_subjects
 report:
   events:

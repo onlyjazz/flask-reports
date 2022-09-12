@@ -1,5 +1,7 @@
 # AE2.yml
 model: pg
+version: '2.1'
+Name: Who had AE and when?
 template: subject_event_variables
 report:
   crf: Adverse Events
