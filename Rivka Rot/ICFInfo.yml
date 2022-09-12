@@ -1,5 +1,0 @@
-model: pg
-template: subject_variables
-report:
-  items:
-    - INFORMED_CONSENT_DATE
