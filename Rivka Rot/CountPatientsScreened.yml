@@ -1,0 +1,6 @@
+model: pg
+template: site_event_count_subjects
+report:
+  events:
+    - Screening
+    - End of Study

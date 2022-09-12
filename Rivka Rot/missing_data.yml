@@ -1,0 +1,9 @@
+
+model: pg
+name: Missing data in Screening and Safety events (count by sites) data/missing
+template: site_events_count_data_missing
+report:
+  events: 
+    - Screen
+    - Safety
+    - Screen
