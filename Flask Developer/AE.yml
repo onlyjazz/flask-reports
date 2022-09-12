@@ -1,7 +1,7 @@
 # AE.yml
 model: pg
 version: '2.1'
-Name: Adverse Events
+name: Adverse Events
 template: subject_event_variables
 report:
   crf: Adverse Events
