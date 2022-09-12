@@ -1,0 +1,12 @@
+# AE2.yml
+model: pg
+version: '2.1'
+name: Patients not eligible and SBS > 5
+# 3. Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
+# 5. Subject signed Informed Consent = 0 (no)
+template: subject_event_variables
+report:
+  crf: Eligibility
+  items:
+     - ELIGIBILITY_INCLUSION_3
+     - ELIGIBILITY_INCLUSION_5
