@@ -4,7 +4,7 @@ version: '2.1'
 name: Patients not eligible and SBS > 5
 # 3. Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
 # 5. Subject signed Informed Consent = 0 (no)
-template: subject_event_variables
+template: subject_variables
 report:
   crf: Eligibility Criteria
   items:
