@@ -1,7 +1,0 @@
----
-model: pg
-report:
-  items:
-    - ITEM_VS_PULSE_RATE_SH5UC
-  crf: "Vital Signs"
-template: subject_event_variables
