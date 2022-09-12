@@ -7,8 +7,8 @@ report:
   crf: Informed Consent
   items:
     - name: INFORMED_CONSENT_DATE
-      condition: "="
-      threshold: ''
+      condition: ">"
+      threshold: '2018-01-01'
     - name: INFORMED_CONSENT_DATE
-      condition: "="
-      threshold: ' '
+      condition: ">"
+      threshold: '2018-01-01'
