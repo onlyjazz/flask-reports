@@ -1,5 +1,7 @@
 model: pg
 template: subject_date_time_variables
+version: 2.1
+name: Informed Consent Date
 report:
   crf: Informed Consent
   items:
