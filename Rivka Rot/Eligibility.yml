@@ -8,9 +8,9 @@ template: subject_events_variable_pairs_with_filters
 report:
   crf: Eligibility
   items:
-    - name: ELIGIBILITY_INCLUSION_5
-      condition: =
-      threshold: 0
-    - name: ELIGIBILITY_INCLUSION_3
-      condition: =
-      threshold: 0
+    - name: 'ELIGIBILITY_INCLUSION_5'
+      condition: '='
+      threshold: '0'
+    - name: 'ELIGIBILITY_INCLUSION_3'
+      condition: '='
+      threshold: '0'
