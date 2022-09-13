@@ -1,7 +1,7 @@
 # EmptyICFDates.yml
 model: pg
 version: '2.1'
-name: Eligibility issues
+name: Eligibility issues - SBS < 3 / Subject didn't sign Informed Consent
 template: subject_events_variable_pairs_with_filters
 # 3. Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
 # 5. Subject signed Informed Consent = 0 (no)
