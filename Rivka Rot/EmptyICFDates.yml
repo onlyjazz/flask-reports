@@ -10,6 +10,3 @@ report:
     - name: INFORMED_CONSENT_DATE
       condition: '>='
       threshold: '2020-01-01'
-    - name: INFORMED_CONSENT_DATE
-      condition: '<'
-      threshold: '2022-01-01'
