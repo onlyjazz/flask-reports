@@ -9,8 +9,8 @@ report:
   crf: Eligibility
   items:
     - name: ELIGIBILITY_INCLUSION_5
-      condition: '='
-      threshold: '0'
+      condition: =
+      threshold: 0
     - name: ELIGIBILITY_INCLUSION_3
-      condition: '='
-      threshold: '0'
+      condition: =
+      threshold: 0
