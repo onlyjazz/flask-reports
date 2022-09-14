@@ -1,0 +1,9 @@
+Model: pg
+template: subject_event_variables
+Name: Migraine Diary
+Version: '2.1'
+report:
+  crf: Migraine Diary
+  items:
+     - MIDPRSYM
+     - MIDMEDEFF5
