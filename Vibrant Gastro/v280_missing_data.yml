@@ -1,5 +1,6 @@
 model: pg
 template: site_events_count_data_missing
+veraion: "2.1"
 report:
   events: 
     - Screening
