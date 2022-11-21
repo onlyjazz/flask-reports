@@ -7,7 +7,7 @@ report:
   items:
     - name: INCL01_IEORRES
       condition: "="
-      threshold: '0'
+      threshold: '1'
     - name: INCL02_IEORRES
       condition: "="
       threshold: '0'
