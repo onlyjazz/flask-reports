@@ -1,0 +1,31 @@
+model: pg
+version: '2.1'
+name: Eligibility Exclusion Criteria
+template: subject_variables
+report:
+  crf:
+    - Eligibility
+  items:
+    - EXCL01_IEORRES
+    - EXCL02_IEORRES
+    - EXCL03_IEORRES
+    - EXCL04_IEORRES
+    - EXCL05_IEORRES
+    - EXCL06_IEORRES
+    - EXCL07_IEORRES
+    - EXCL08_IEORRES
+    - EXCL09_IEORRES
+    - EXCL10_IEORRES
+    - EXCL11_IEORRES
+    - EXCL12_IEORRES
+    - EXCL13_IEORRES
+    - EXCL14_IEORRES
+    - EXCL15_IEORRES
+    - EXCL16_IEORRES
+    - EXCL17_IEORRES
+    - EXCL18_IEORRES
+    - EXCL19_IEORRES
+    - EXCL20_IEORRES
+    - EXCL21_IEORRES
+    - EXCL22_IEORRES
+    - IEEXYN
