@@ -3,14 +3,9 @@ version: '2.1'
 name: Eligibility issues
 template: subject_variables
 report:
-  crf: Eligibility
+  crf:
+    - Eligibility
   items:
-    - name: INCL01_IEORRES
-      condition: "="
-      threshold: '1'
-    - name: INCL02_IEORRES
-      condition: "="
-      threshold: '0'
-    - name: INCL03_IEORRES
-      condition: "="
-      threshold: '0'
+    - INCL01_IEORRES
+    - INCL02_IEORRES
+    - INCL03_IEORRES
