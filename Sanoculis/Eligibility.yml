@@ -1,6 +1,6 @@
 model: pg
 version: '2.1'
-name: Eligibility issues
+name: Eligibility INCLUSION CRITERIA
 template: subject_variables
 report:
   crf:
@@ -9,3 +9,9 @@ report:
     - INCL01_IEORRES
     - INCL02_IEORRES
     - INCL03_IEORRES
+    - INCL04_IEORRES
+    - INCL05_IEORRES
+    - INCL06_IEORRES
+    - INCL07_IEORRES
+    - INCL08_IEORRES
+    - IEINYN
