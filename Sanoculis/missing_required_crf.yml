@@ -1,6 +1,7 @@
 model: pg
 template: site_events_count_data_missing
 version: "2.1"
+name: Missing required CRFs in events (Count of data CRF / missing CRFs)
 report:
   events: 
     - Screening
