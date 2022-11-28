@@ -2,7 +2,7 @@
 model: pg
 version: '2.1'
 name: Count Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
-template: agg_subject_events_variable_with_filters
+template: agg_subject_variable_with_filters
 # Count Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
 report:
   crf: 'Eligibility Criteria'
