@@ -5,7 +5,6 @@ name: Count Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) pe
 template: agg_subject_variable_with_filters
 # Count Subjects with an average of < 3 Spontaneous Bowel Movements (SBM) per week (no)
 report:
-  crf: 'Eligibility Criteria'
   item:
     - name: 'ELIGIBILITY_INCLUSION_5'
       condition: '='
