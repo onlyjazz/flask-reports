@@ -5,4 +5,5 @@ name: Count subjects in events
 report:
   events:
     - Screening
+    - Baseline
     - End of Study
