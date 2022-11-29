@@ -6,3 +6,5 @@ chart: pie
 report:
   events:
     - Screening
+    - Baseline
+    - End of Study
