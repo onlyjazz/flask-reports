@@ -2,6 +2,7 @@ model: pg
 template: site_event_count_subjects
 version: '2.1'
 name: Count subjects in events
+chart: pie
 report:
   events:
     - Screening
